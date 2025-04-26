@@ -1,17 +1,15 @@
 function afficherMessage() {
-    // Récupérer les valeurs des champs de saisie
     var prenom = document.getElementById("prenom").value;
     var nom = document.getElementById("nom").value;
 
-    // Effacer le message par défaut
+    // Effacer le message précédent
     document.getElementById("message").innerHTML = "";
 
-    // Vérifier si les champs sont remplis
+    // Vérification des champs
     if (prenom && nom) {
-        // Afficher le message personnalisé
-        document.getElementById("message").innerHTML = "Bonjour " + prenom + " " + nom + ", bienvenue sur mon site web 😊";
+        // Message personnalisé avec la blague
+        document.getElementById("message").innerHTML = "Félicitations " + prenom + " " + nom + "! Tu as trouvé le bouton d'envoi, maintenant tu mérites une blague : Pourquoi le serveur a-t-il traversé la route ? Parce qu'il voulait éviter un 404. 😄";
     } else {
-        // Si un des champs est vide, afficher un message d'erreur
-        document.getElementById("message").innerHTML = "Veuillez entrer votre prénom et votre nom.";
+        document.getElementById("message").innerHTML = "Oups! Tu as oublié ton prénom ou ton nom. 😅";
     }
 }
