@@ -1,4 +1,3 @@
-/* Centrage complet */
 body {
     margin: 0;
     padding: 0;
@@ -9,7 +8,6 @@ body {
     background-color: #f0f0f0;
 }
 
-/* Conteneur central */
 .container {
     text-align: center;
     background-color: white;
@@ -17,22 +15,19 @@ body {
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     width: 90%;
-    max-width: 400px;
+    max-width: 600px;
 }
 
-/* Titre principal */
 h1 {
     margin-bottom: 40px;
-    font-size: 24px;
+    font-size: 28px;
     color: #333;
 }
 
-/* Groupes formulaire */
 .form-group {
     margin-bottom: 20px;
 }
 
-/* Champs de texte */
 input[type="text"] {
     width: 80%;
     padding: 10px;
@@ -41,7 +36,6 @@ input[type="text"] {
     border: 1px solid #ccc;
 }
 
-/* Bouton */
 button {
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -56,9 +50,39 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Message */
 #message {
     margin-top: 30px;
     font-size: 18px;
     color: #555;
+}
+
+/* CV */
+#cv {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+}
+
+#cv h2 {
+    text-align: center;
+}
+
+/* Bouton CV */
+.cv-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #0056b3;
 }
