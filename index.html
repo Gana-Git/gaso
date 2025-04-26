@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon premier site</title>
+    <title>Mon Site Web</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Bannière de titre -->
     <header>
         <h1>Bienvenue sur mon site web !</h1>
     </header>
+
+    <!-- Formulaire de saisie -->
     <main>
-        <p>Voici ma première page sur GitHub Pages. 🎉</p>
+        <div class="form-container">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" placeholder="Entrez votre prénom" required><br><br>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" placeholder="Entrez votre nom" required><br><br>
+
+            <button onclick="afficherMessage()">Envoyer</button>
+        </div>
+
+        <div id="message" class="message-container"></div>
     </main>
+
+    <!-- Footer -->
     <footer>
-        <p>Mon premier site web, créé avec GitHub Pages.</p>
+        <p>Mon site web créé avec GitHub Pages.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
