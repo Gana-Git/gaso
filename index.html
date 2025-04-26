@@ -8,24 +8,29 @@
 </head>
 <body>
 
-    <!-- Bannières -->
-    <div class="banner">
-        <h1>Bienvenue dans mon tout premier site !</h1>
-    </div>
+    <!-- Conteneur principal -->
+    <div class="container">
 
-    <!-- Formulaire -->
-    <div class="form-container">
-        <label for="prenom">Prénom :</label>
-        <input type="text" id="prenom" name="prenom">
-    </div>
-    <div class="form-container">
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom">
-    </div>
-    <button onclick="afficherMessage()">Envoyer</button>
+        <!-- Bannières -->
+        <div class="banner">
+            <h1>Bienvenue dans mon tout premier site !</h1>
+        </div>
 
-    <!-- Message de retour -->
-    <p id="message"></p>
+        <!-- Formulaire -->
+        <div class="form-container">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom">
+        </div>
+        <div class="form-container">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom">
+        </div>
+        <button onclick="afficherMessage()">Envoyer</button>
+
+        <!-- Message de retour -->
+        <p id="message"></p>
+
+    </div>
 
     <script src="script.js"></script>
 
