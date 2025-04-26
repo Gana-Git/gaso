@@ -11,6 +11,7 @@
     <div class="container">
         <h1>Bienvenue dans mon univers</h1>
 
+        <!-- Formulaire pour le prénom et nom -->
         <div class="form-group">
             <label for="prenom">Prénom :</label>
             <input type="text" id="prenom" name="prenom">
@@ -23,16 +24,13 @@
 
         <button onclick="afficherMessage()">Envoyer</button>
 
+        <!-- Message qui s'affiche après avoir cliqué sur envoyer -->
         <p id="message"></p>
 
-        <!-- CV caché au début -->
+        <!-- CV -->
         <div id="cv" style="display: none;">
             <h2>Mon CV</h2>
             <a href="cv.pdf" download class="cv-button">📄 Télécharger mon CV</a>
-
-            <!-- Ou si tu veux afficher directement le PDF :
-            <embed src="cv.pdf" type="application/pdf" width="100%" height="600px" />
-            -->
         </div>
 
     </div>
