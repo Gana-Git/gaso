@@ -3,36 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site Web</title>
+    <title>Mon premier site</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Conteneur principal -->
     <div class="container">
+        <h1>Bienvenue dans mon tout premier site</h1>
 
-        <!-- Bannières -->
-        <div class="banner">
-            <h1>Bienvenue dans mon tout premier site !</h1>
-        </div>
-
-        <!-- Formulaire -->
-        <div class="form-container">
+        <div class="form-group">
             <label for="prenom">Prénom :</label>
             <input type="text" id="prenom" name="prenom">
         </div>
-        <div class="form-container">
+
+        <div class="form-group">
             <label for="nom">Nom :</label>
             <input type="text" id="nom" name="nom">
         </div>
+
         <button onclick="afficherMessage()">Envoyer</button>
 
-        <!-- Message de retour -->
         <p id="message"></p>
-
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
