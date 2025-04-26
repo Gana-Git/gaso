@@ -1,60 +1,54 @@
-/* Style général */
+/* Centrage complet */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Prend toute la hauteur de la page */
-    text-align: center; /* Centrer le texte dans les éléments */
+    background-color: #f0f0f0;
 }
 
-/* Conteneur principal qui garde tout centré */
+/* Conteneur central */
 .container {
-    width: 90%;
-    max-width: 600px; /* Limite la largeur à 600px */
+    text-align: center;
     background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour donner du relief */
-    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 400px;
 }
 
-/* Bannière */
-.banner {
-    background-color: #4CAF50; /* Couleur de fond de la bannière */
-    color: white;
-    padding: 20px;
-    font-size: 28px;
-    border-radius: 5px;
-    margin-bottom: 20px; /* Espacement sous la bannière */
+/* Titre principal */
+h1 {
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: #333;
 }
 
-/* Formulaire */
-.form-container {
-    margin: 15px 0; /* Espacement entre chaque champ */
+/* Groupes formulaire */
+.form-group {
+    margin-bottom: 20px;
 }
 
-input {
+/* Champs de texte */
+input[type="text"] {
+    width: 80%;
     padding: 10px;
-    font-size: 16px;
-    margin-left: 10px;
-    width: 250px; /* Largeur des champs */
-    text-align: center;
-    margin-top: 10px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 /* Bouton */
 button {
+    padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 12px 25px;
-    font-size: 16px;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
     margin-top: 20px;
 }
 
@@ -62,14 +56,9 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Message de retour */
+/* Message */
 #message {
-    margin-top: 30px; /* Décalage pour être plus bas que le bouton */
+    margin-top: 30px;
     font-size: 18px;
-    color: #333;
-}
-
-/* Espacement entre les sections */
-form, .form-container {
-    margin-top: 20px; /* Plus d'espace entre les éléments */
+    color: #555;
 }
