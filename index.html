@@ -7,26 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Bannière de titre -->
-    <header>
-        <h1>Bienvenue sur mon site web !</h1>
-    </header>
 
-    <!-- Formulaire de saisie -->
-    <main>
-        <div class="form-container">
-            <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" placeholder="Entrez votre prénom" required><br><br>
+    <!-- Bannières -->
+    <div class="banner" id="banner1">
+        <h1>Bienvenue sur le site de Gaso!</h1>
+    </div>
+    <div class="banner" id="banner2">
+        <h1>Mon tout premier site web</h1>
+    </div>
+    <div class="banner" id="banner3">
+        <h1>Venez découvrir ma page</h1>
+    </div>
 
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" placeholder="Entrez votre nom" required><br><br>
+    <!-- Formulaire -->
+    <div>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom">
+    </div>
+    <div>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom">
+    </div>
+    <button onclick="afficherMessage()">Envoyer</button>
 
-            <button onclick="afficherMessage()">Envoyer</button>
-        </div>
-
-        <div id="message" class="message-container"></div>
-    </main>
+    <!-- Message de retour -->
+    <p id="message"></p>
 
     <script src="script.js"></script>
+
 </body>
 </html>
