@@ -1,5 +1,5 @@
 function afficherMessage() {
-    // Récupérer les valeurs des champs
+    // Récupérer les valeurs des champs de saisie
     var prenom = document.getElementById("prenom").value;
     var nom = document.getElementById("nom").value;
 
