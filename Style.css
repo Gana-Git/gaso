@@ -1,27 +1,35 @@
 /* Style général */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+    height: 100vh; /* Prend toute la hauteur de la page */
+    text-align: center; /* Centrer le texte dans les éléments */
+}
+
+/* Conteneur principal qui garde tout centré */
+.container {
+    width: 90%;
+    max-width: 600px; /* Limite la largeur à 600px */
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour donner du relief */
+    text-align: center;
 }
 
 /* Bannière */
 .banner {
     background-color: #4CAF50; /* Couleur de fond de la bannière */
     color: white;
-    padding: 30px;
-    font-size: 32px;
+    padding: 20px;
+    font-size: 28px;
     border-radius: 5px;
-    width: 80%;
-    max-width: 900px; /* Max largeur */
-    margin-bottom: 20px; /* Espacement entre les bannières */
+    margin-bottom: 20px; /* Espacement sous la bannière */
 }
 
 /* Formulaire */
@@ -33,7 +41,9 @@ input {
     padding: 10px;
     font-size: 16px;
     margin-left: 10px;
-    width: 200px; /* Largeur fixe des champs */
+    width: 250px; /* Largeur des champs */
+    text-align: center;
+    margin-top: 10px;
 }
 
 /* Bouton */
@@ -41,7 +51,7 @@ button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
@@ -61,5 +71,5 @@ button:hover {
 
 /* Espacement entre les sections */
 form, .form-container {
-    margin-top: 20px; /* Un peu d'espace entre la bannière et le formulaire */
+    margin-top: 20px; /* Plus d'espace entre les éléments */
 }
