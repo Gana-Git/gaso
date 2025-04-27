@@ -73,7 +73,7 @@ button:hover {
 .cv-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espacement entre les deux boutons */
+    gap: 60px; /* Espacement entre les deux boutons */
     margin-top: 20px;
 }
 
