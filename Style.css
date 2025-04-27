@@ -69,10 +69,17 @@ button:hover {
     text-align: center;
 }
 
-/* Bouton CV */
+/* Conteneur pour les deux boutons */
+.cv-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacement entre les deux boutons */
+    margin-top: 20px;
+}
+
+/* Style des boutons */
 .cv-button {
     display: inline-block;
-    margin-top: 20px;
     padding: 12px 24px;
     background-color: #007BFF;
     color: white;
@@ -83,6 +90,7 @@ button:hover {
     transition: background-color 0.3s ease;
 }
 
+/* Effet au survol */
 .cv-button:hover {
     background-color: #0056b3;
 }
